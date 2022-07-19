@@ -10,7 +10,7 @@ class BlogPost(BaseModel):
     id: int
     title: str
     paragraphs: str
-    hasFoulLanguage: bool = False
+    hasFoulLanguage: str = "unknown"
 
     class Config:
         orm_mode = True

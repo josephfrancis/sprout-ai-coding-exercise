@@ -40,4 +40,4 @@ def test_create_blog_post():
     assert response_json["paragraphs"] == '["I like beans", "I hate beans"]'
 
     # Check the hasFoulLanguage column has been created
-    assert type(response_json["hasFoulLanguage"]) == bool
+    assert type(response_json["hasFoulLanguage"]) == str

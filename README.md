@@ -14,6 +14,9 @@ The database is SQLite as per [this tutorial](https://fastapi.tiangolo.com/advan
 ## Running
 
 ```sh
-# With Docker Compose
+# With Docker Compose (requires Docker daemon)
 docker-compose up --build
+
+# With local environment (Python v3.10.5)
+python -m uvicorn app.main:app
 ```
